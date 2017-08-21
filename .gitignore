@@ -1,3 +1,5 @@
 /public/*
 !public/.gitkeep
 /.idea
+npm-debug.log
+/node_modules
