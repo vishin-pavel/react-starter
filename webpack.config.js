@@ -10,7 +10,8 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'Output Management'
+      inject: true,
+      template: 'src/index.html'
     }),
     new webpack.HotModuleReplacementPlugin()
   ],
@@ -31,7 +32,7 @@ module.exports = {
         use: [
           {
             loader: 'babel-loader',
-            options: {presets: ['es2015']}
+            options: {presets: ['es2015', 'react']}
           }
         ]
       },
