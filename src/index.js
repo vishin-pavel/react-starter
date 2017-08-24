@@ -8,4 +8,3 @@ render(
 <App />,
   document.getElementById('root')
 )
-import '../styles/main.scss';
